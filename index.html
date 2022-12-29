@@ -98,9 +98,19 @@
 <img src="/2022/12/29/%E6%AD%A5%E9%AA%A4/01.png" class title="This is an example image">
 </div>
 
-<h2 id="配置-SSH-key"><a href="#配置-SSH-key" class="headerlink" title="配置 SSH key"></a>配置 SSH key</h2><h3 id="要使用-git-工具首先要配置一下-SSH-key，为部署本地博客到-Github-做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github-权才可以，但是直接使用用户名和密码太不安全了，所以我们使用-ssh-key-来解决本地和服务器的连接问题。"><a href="#要使用-git-工具首先要配置一下-SSH-key，为部署本地博客到-Github-做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github-权才可以，但是直接使用用户名和密码太不安全了，所以我们使用-ssh-key-来解决本地和服务器的连接问题。" class="headerlink" title="要使用 git 工具首先要配置一下 SSH key，为部署本地博客到 Github 做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github 权才可以，但是直接使用用户名和密码太不安全了，所以我们使用 ssh key 来解决本地和服务器的连接问题。"></a>要使用 git 工具首先要配置一下 SSH key，为部署本地博客到 Github 做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github 权才可以，但是直接使用用户名和密码太不安全了，所以我们使用 ssh key 来解决本地和服务器的连接问题。</h3><p>###生成密钥：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;2952581585@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="配置-SSH-key"><a href="#配置-SSH-key" class="headerlink" title="配置 SSH key"></a>配置 SSH key</h2><h3 id="要使用-git-工具首先要配置一下-SSH-key，为部署本地博客到-Github-做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github-权才可以，但是直接使用用户名和密码太不安全了，所以我们使用-ssh-key-来解决本地和服务器的连接问题。"><a href="#要使用-git-工具首先要配置一下-SSH-key，为部署本地博客到-Github-做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github-权才可以，但是直接使用用户名和密码太不安全了，所以我们使用-ssh-key-来解决本地和服务器的连接问题。" class="headerlink" title="要使用 git 工具首先要配置一下 SSH key，为部署本地博客到 Github 做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github 权才可以，但是直接使用用户名和密码太不安全了，所以我们使用 ssh key 来解决本地和服务器的连接问题。"></a>要使用 git 工具首先要配置一下 SSH key，为部署本地博客到 Github 做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github 权才可以，但是直接使用用户名和密码太不安全了，所以我们使用 ssh key 来解决本地和服务器的连接问题。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;2952581585@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><h3 id="部署之前需要修改配置和安装部署插件。首先打开项目根目录下的-config-yml-配置文件配置参数。拉到文件末尾，填上如下配置："><a href="#部署之前需要修改配置和安装部署插件。首先打开项目根目录下的-config-yml-配置文件配置参数。拉到文件末尾，填上如下配置：" class="headerlink" title="部署之前需要修改配置和安装部署插件。首先打开项目根目录下的 _config.yml 配置文件配置参数。拉到文件末尾，填上如下配置："></a>部署之前需要修改配置和安装部署插件。首先打开项目根目录下的 _config.yml 配置文件配置参数。拉到文件末尾，填上如下配置：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:T70824/T70824.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h2 id="浏览器访问地址"><a href="#浏览器访问地址" class="headerlink" title="浏览器访问地址"></a>浏览器访问地址</h2><div align="center">
+<img src="/2022/12/29/%E6%AD%A5%E9%AA%A4/02.png" class title="This is an example image">
+</div>
 
+<h2 id="开始写作"><a href="#开始写作" class="headerlink" title="开始写作"></a>开始写作</h2><div align="center">
+<img src="/2022/12/29/%E6%AD%A5%E9%AA%A4/03.png" class title="This is an example image">
+</div>
+
+<h2 id="持续写作"><a href="#持续写作" class="headerlink" title="持续写作"></a>持续写作</h2><div align="center">
+<img src="/2022/12/29/%E6%AD%A5%E9%AA%A4/04.png" class title="This is an example image">
+</div>
 
 
       

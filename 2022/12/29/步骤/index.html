@@ -15,8 +15,11 @@
 <meta property="og:description" content="这里记录了完成Linux大作业时的相关步骤，其中包含了相关图片、代码以及命令准备环境准备 node 和 git 环境。实验楼里已经安装好了node和 git 环境，可以执行以下命令验证是否成功。123git versionnode -vnpm -v  安装Hexo如果以上环境准备好了就可以使用npm开始安装Hexo了。在命令行输入执行以下命令：1npm install -g hexo-cli  安">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2022/12/29/%E6%AD%A5%E9%AA%A4/01.png">
+<meta property="og:image" content="http://example.com/2022/12/29/%E6%AD%A5%E9%AA%A4/02.png">
+<meta property="og:image" content="http://example.com/2022/12/29/%E6%AD%A5%E9%AA%A4/03.png">
+<meta property="og:image" content="http://example.com/2022/12/29/%E6%AD%A5%E9%AA%A4/04.png">
 <meta property="article:published_time" content="2022-12-29T10:07:14.000Z">
-<meta property="article:modified_time" content="2022-12-29T11:46:59.265Z">
+<meta property="article:modified_time" content="2022-12-29T12:02:50.554Z">
 <meta property="article:author" content="Li xiaolin">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2022/12/29/%E6%AD%A5%E9%AA%A4/01.png">
@@ -100,9 +103,19 @@
 <img src="/2022/12/29/%E6%AD%A5%E9%AA%A4/01.png" class title="This is an example image">
 </div>
 
-<h2 id="配置-SSH-key"><a href="#配置-SSH-key" class="headerlink" title="配置 SSH key"></a>配置 SSH key</h2><h3 id="要使用-git-工具首先要配置一下-SSH-key，为部署本地博客到-Github-做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github-权才可以，但是直接使用用户名和密码太不安全了，所以我们使用-ssh-key-来解决本地和服务器的连接问题。"><a href="#要使用-git-工具首先要配置一下-SSH-key，为部署本地博客到-Github-做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github-权才可以，但是直接使用用户名和密码太不安全了，所以我们使用-ssh-key-来解决本地和服务器的连接问题。" class="headerlink" title="要使用 git 工具首先要配置一下 SSH key，为部署本地博客到 Github 做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github 权才可以，但是直接使用用户名和密码太不安全了，所以我们使用 ssh key 来解决本地和服务器的连接问题。"></a>要使用 git 工具首先要配置一下 SSH key，为部署本地博客到 Github 做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github 权才可以，但是直接使用用户名和密码太不安全了，所以我们使用 ssh key 来解决本地和服务器的连接问题。</h3><p>###生成密钥：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;2952581585@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="配置-SSH-key"><a href="#配置-SSH-key" class="headerlink" title="配置 SSH key"></a>配置 SSH key</h2><h3 id="要使用-git-工具首先要配置一下-SSH-key，为部署本地博客到-Github-做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github-权才可以，但是直接使用用户名和密码太不安全了，所以我们使用-ssh-key-来解决本地和服务器的连接问题。"><a href="#要使用-git-工具首先要配置一下-SSH-key，为部署本地博客到-Github-做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github-权才可以，但是直接使用用户名和密码太不安全了，所以我们使用-ssh-key-来解决本地和服务器的连接问题。" class="headerlink" title="要使用 git 工具首先要配置一下 SSH key，为部署本地博客到 Github 做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github 权才可以，但是直接使用用户名和密码太不安全了，所以我们使用 ssh key 来解决本地和服务器的连接问题。"></a>要使用 git 工具首先要配置一下 SSH key，为部署本地博客到 Github 做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github 权才可以，但是直接使用用户名和密码太不安全了，所以我们使用 ssh key 来解决本地和服务器的连接问题。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;2952581585@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><h3 id="部署之前需要修改配置和安装部署插件。首先打开项目根目录下的-config-yml-配置文件配置参数。拉到文件末尾，填上如下配置："><a href="#部署之前需要修改配置和安装部署插件。首先打开项目根目录下的-config-yml-配置文件配置参数。拉到文件末尾，填上如下配置：" class="headerlink" title="部署之前需要修改配置和安装部署插件。首先打开项目根目录下的 _config.yml 配置文件配置参数。拉到文件末尾，填上如下配置："></a>部署之前需要修改配置和安装部署插件。首先打开项目根目录下的 _config.yml 配置文件配置参数。拉到文件末尾，填上如下配置：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:T70824/T70824.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h2 id="浏览器访问地址"><a href="#浏览器访问地址" class="headerlink" title="浏览器访问地址"></a>浏览器访问地址</h2><div align="center">
+<img src="/2022/12/29/%E6%AD%A5%E9%AA%A4/02.png" class title="This is an example image">
+</div>
 
+<h2 id="开始写作"><a href="#开始写作" class="headerlink" title="开始写作"></a>开始写作</h2><div align="center">
+<img src="/2022/12/29/%E6%AD%A5%E9%AA%A4/03.png" class title="This is an example image">
+</div>
+
+<h2 id="持续写作"><a href="#持续写作" class="headerlink" title="持续写作"></a>持续写作</h2><div align="center">
+<img src="/2022/12/29/%E6%AD%A5%E9%AA%A4/04.png" class title="This is an example image">
+</div>
 
 
       
