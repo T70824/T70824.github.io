@@ -98,8 +98,8 @@
 ![](01.png)
 </div>
 
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h2 id="配置-SSH-key"><a href="#配置-SSH-key" class="headerlink" title="配置 SSH key"></a>配置 SSH key</h2><h3 id="要使用-git-工具首先要配置一下-SSH-key，为部署本地博客到-Github-做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github-权才可以，但是直接使用用户名和密码太不安全了，所以我们使用-ssh-key-来解决本地和服务器的连接问题。"><a href="#要使用-git-工具首先要配置一下-SSH-key，为部署本地博客到-Github-做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github-权才可以，但是直接使用用户名和密码太不安全了，所以我们使用-ssh-key-来解决本地和服务器的连接问题。" class="headerlink" title="要使用 git 工具首先要配置一下 SSH key，为部署本地博客到 Github 做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github 权才可以，但是直接使用用户名和密码太不安全了，所以我们使用 ssh key 来解决本地和服务器的连接问题。"></a>要使用 git 工具首先要配置一下 SSH key，为部署本地博客到 Github 做准备。为什么要配置这个呢？因为你提交代码肯定要拥有你的Github 权才可以，但是直接使用用户名和密码太不安全了，所以我们使用 ssh key 来解决本地和服务器的连接问题。</h3><p>###生成密钥：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;2952581585@qq.com&quot;</span></span><br></pre></td></tr></table></figure>
 
 
 
