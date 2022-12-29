@@ -7,12 +7,12 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="课程学习笔记">
+  <meta name="description" content="课程大作业">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="课程学习笔记">
+<meta property="og:description" content="课程大作业">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Li xiaolin">
 <meta name="twitter:card" content="summary">
@@ -69,7 +69,7 @@
     <article id="post-步骤记录" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2022/12/29/%E6%AD%A5%E9%AA%A4%E8%AE%B0%E5%BD%95/" class="article-date">
-  <time datetime="2022-12-29T08:25:51.801Z" itemprop="datePublished">2022-12-29</time>
+  <time datetime="2022-12-29T09:12:06.318Z" itemprop="datePublished">2022-12-29</time>
 </a>
     
   </div>
@@ -88,24 +88,58 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这里记录了完成Linux大作业时的相关步骤，其中包含了相关图片、代码以及命令</p>
-<h2 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h2><h3 id="准备-node-和-git-环境。实验楼里已经安装好了node-和-git-环境，可以执行以下命令-验证是否成功。"><a href="#准备-node-和-git-环境。实验楼里已经安装好了node-和-git-环境，可以执行以下命令-验证是否成功。" class="headerlink" title="准备 node 和 git 环境。实验楼里已经安装好了node 和 git 环境，可以执行以下命令 验证是否成功。"></a>准备 node 和 git 环境。实验楼里已经安装好了node 和 git 环境，可以执行以下命令 验证是否成功。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git version</span><br><span class="line">  node -v</span><br><span class="line">  npm -v</span><br></pre></td></tr></table></figure>
+        <h2 id="这里记录了完成Linux大作业时的相关步骤，其中包含了相关图片、代码以及命令"><a href="#这里记录了完成Linux大作业时的相关步骤，其中包含了相关图片、代码以及命令" class="headerlink" title="这里记录了完成Linux大作业时的相关步骤，其中包含了相关图片、代码以及命令"></a>这里记录了完成Linux大作业时的相关步骤，其中包含了相关图片、代码以及命令</h2><h2 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h2><h3 id="准备-node-和-git-环境。实验楼里已经安装好了node和-git-环境，可以执行以下命令验证是否成功。"><a href="#准备-node-和-git-环境。实验楼里已经安装好了node和-git-环境，可以执行以下命令验证是否成功。" class="headerlink" title="准备 node 和 git 环境。实验楼里已经安装好了node和 git 环境，可以执行以下命令验证是否成功。"></a>准备 node 和 git 环境。实验楼里已经安装好了node和 git 环境，可以执行以下命令验证是否成功。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git version</span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><h3 id="如果以上环境准备好了就可以使用npm开始安装Hexo了。在命令行输入执行以下命令："><a href="#如果以上环境准备好了就可以使用npm开始安装Hexo了。在命令行输入执行以下命令：" class="headerlink" title="如果以上环境准备好了就可以使用npm开始安装Hexo了。在命令行输入执行以下命令："></a>如果以上环境准备好了就可以使用npm开始安装Hexo了。在命令行输入执行以下命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="安装-Hexo完成后，再执行下列命令，Hexo将会在指定文件夹中新建所需要的文件。"><a href="#安装-Hexo完成后，再执行下列命令，Hexo将会在指定文件夹中新建所需要的文件。" class="headerlink" title="安装 Hexo完成后，再执行下列命令，Hexo将会在指定文件夹中新建所需要的文件。"></a>安装 Hexo完成后，再执行下列命令，Hexo将会在指定文件夹中新建所需要的文件。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="注册-Github"><a href="#注册-Github" class="headerlink" title="注册 Github"></a>注册 Github</h2><h3 id="如果-Github-账号请先在Github官网进行注册。注册完毕后，我们新建一个仓库："><a href="#如果-Github-账号请先在Github官网进行注册。注册完毕后，我们新建一个仓库：" class="headerlink" title="如果 Github 账号请先在Github官网进行注册。注册完毕后，我们新建一个仓库："></a>如果 Github 账号请先在Github官网进行注册。注册完毕后，我们新建一个仓库：</h3><p>&lt;img src=&gt;</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+
 
       
     </div>
     <footer class="article-footer">
       <a data-url="http://example.com/2022/12/29/%E6%AD%A5%E9%AA%A4%E8%AE%B0%E5%BD%95/" data-id="clc8tj6t80000g0cicvg29idp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-步骤" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/12/29/%E6%AD%A5%E9%AA%A4/" class="article-date">
+  <time datetime="2022-12-29T09:03:37.000Z" itemprop="datePublished">2022-12-29</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/12/29/%E6%AD%A5%E9%AA%A4/">步骤</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/12/29/%E6%AD%A5%E9%AA%A4/" data-id="clc8vbc0q0000b3ci2y1a2jhw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -186,6 +220,10 @@
         
           <li>
             <a href="/2022/12/29/%E6%AD%A5%E9%AA%A4%E8%AE%B0%E5%BD%95/">步骤记录</a>
+          </li>
+        
+          <li>
+            <a href="/2022/12/29/%E6%AD%A5%E9%AA%A4/">步骤</a>
           </li>
         
           <li>
